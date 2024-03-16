@@ -24,6 +24,7 @@ export default function Header() {
               width={136}
               height={59}
               alt={'agiliza doutor logo'}
+              className="border-none"
             />
           </Link>
           <nav className="hidden md:flex items-center justify-between gap-4 text-sm">
@@ -33,7 +34,7 @@ export default function Header() {
             <NavLink href={'#blog'}>blog</NavLink>
             <NavLink href={'#solicitar uma demo'}>solicitar uma demo</NavLink>
           </nav>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <Link
               className="rounded-full border-[2px] px-8 hover:bg-agiliza-green transition-all duration-300  border-agiliza-green flex items-center gap-2 py-2 text-sm"
               href="#"
@@ -41,7 +42,7 @@ export default function Header() {
               <span>login</span>
             </Link>
             <Link
-              className="bg-agiliza-azul-naval text-white hover:bg-transparent border-[2px] transition-colors duration-300 border-agiliza-azul-naval px-8 rounded-full flex items-center gap-2 py-2 text-sm font-medium"
+              className="bg-agiliza-azul-naval text-white hover:text-agiliza-azul-naval hover:bg-transparent border-[2px] transition-colors duration-300 border-agiliza-azul-naval px-2 md:px-8 rounded-full flex items-center gap-2 py-2 text-sm font-medium"
               href="#"
             >
               <span>registre-se</span>
