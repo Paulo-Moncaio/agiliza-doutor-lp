@@ -16,7 +16,7 @@ function NavLink({ children, href }: PropsWithChildren & LinkProps) {
 export default function Header() {
   return (
     <header className="bg-white">
-      <div className=" px-4 py-8 md:px-6 lg:px-8 ">
+      <div className="px-4 py-8 md:px-6 lg:px-8 ">
         <div className="flex items-center justify-between h-14 mx-auto max-w-5xl">
           <Link className="font-semibold flex items-center gap-2" href="#">
             <Image

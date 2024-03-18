@@ -20,7 +20,7 @@ export default function Hero() {
         className="hidden absolute xl:block right-0 bottom-0"
         alt={''}
       />
-      <div className="flex flex-col items-end xl:items-center md:py-44">
+      <div className="flex flex-col items-end xl:items-center py-10 md:py-44">
         <div className="max-w-lg text-center">
           <h1 className="text-5xl font-bold text-agiliza-azul-naval ">
             Descomplique seus

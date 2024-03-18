@@ -4,6 +4,7 @@
 
 body {
   color: #1B1C34;
+  font-weight: 500;
 }
 
 @layer utilities {
