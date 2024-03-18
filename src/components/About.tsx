@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function About() {
   return (
-    <section className="flex pt-16 pb-8 px-2 justify-center items-center flex-col md:flex-row bg-[#F1F3F6]">
+    <section className="flex pt-16 pb-8 px-2 justify-center items-center flex-col lg:flex-row bg-[#F1F3F6]">
       <div className="flex flex-col">
         <h4 className="text-3xl min-w-72">
           Mostramos todas <br />
@@ -27,12 +27,12 @@ export default function About() {
         </Link>
       </div>
       <Image
-        className="flex py-8 md:py-0 "
+        className=" py-8 md:py-0 "
         quality={100}
         src={womanTalkingImage}
         alt={'woman talking on cellphone'}
       />
-      <div className="relative  md:place-self-start">
+      <div className="relative  lg:place-self-start">
         <div className="absolute w-[2px] h-[105px] bg-agiliza-green" />
         <h4 className="ml-3 text-3xl ">
           Conte com o <br />

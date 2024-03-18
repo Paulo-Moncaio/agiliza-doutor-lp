@@ -21,7 +21,7 @@ const flow = [
 
 export default function Flow() {
   return (
-    <section className="relative mb-[-100px]">
+    <section className="relative">
       <div className="bg-agiliza-azul-naval m-0 absolute h-[calc(100%-50px)] -z-10 w-full"></div>
       <div className="px-2 md:px-8">
         <div className="pt-20 px-2">
