@@ -2,6 +2,7 @@ import About from '@/components/About'
 import Flow from '@/components/Flow'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import Journey from '@/components/Journey'
 import Partners from '@/components/Partners'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <About />
         <Flow />
         <Partners />
+        <Journey />
       </main>
     </div>
   )
