@@ -1,5 +1,6 @@
 import About from '@/components/About'
 import Flow from '@/components/Flow'
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import HowItWorks from '@/components/HowItWorks'
@@ -18,6 +19,7 @@ export default function Home() {
         <Journey />
         <HowItWorks />
       </main>
+      <Footer />
     </div>
   )
 }
