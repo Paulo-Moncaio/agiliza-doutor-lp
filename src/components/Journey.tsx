@@ -26,26 +26,29 @@ const texts = [
 
 export default function Journey() {
   return (
-    <section className="max-w-5xl flex flex-col md:flex-row gap-y-8 px-4 mb-10 pt-10 items-center justify-center">
-      <Image
-        src={doctorsImage}
-        alt={''}
-        className="object-contain md:self-start"
-      />
-      <aside className="relative max-w-sm">
-        <div className="absolute w-[1px] h-full bg-agiliza-cinza" />
-        <div className="absolute w-[3px] h-[105px] bg-agiliza-green left-[-1px]" />
-        <div className="ml-10">
-          <h2 className="text-lg">Entenda como funciona</h2>
-          <h3 className="mt-5 text-3xl ">
-            <span className="text-agiliza-green">Jornada segura</span>
-            <br /> e simples
-          </h3>
-          {texts.map((text, index) => (
-            <TextSection key={index} {...text} />
-          ))}
-        </div>
-      </aside>
+    <section className="px-4">
+      <div className="max-w-5xl flex flex-col md:flex-row gap-y-8  mb-20 pt-10 items-center justify-center">
+        <Image
+          src={doctorsImage}
+          alt={''}
+          className="object-contain md:self-start"
+        />
+        <aside className="relative max-w-sm">
+          <div className="absolute w-[1px] h-full bg-agiliza-cinza" />
+          <div className="absolute w-[3px] h-[105px] bg-agiliza-green left-[-1px]" />
+          <div className="ml-10">
+            <h2 className="text-lg">Entenda como funciona</h2>
+            <h3 className="mt-5 text-3xl ">
+              <span className="text-agiliza-green">Jornada segura</span>
+              <br /> e simples
+            </h3>
+            {texts.map((text, index) => (
+              <TextSection key={index} {...text} />
+            ))}
+          </div>
+        </aside>
+      </div>
+      <div className="h-[1px] w-full bg-[#E0E0E0]" />
     </section>
   )
 }
