@@ -27,7 +27,7 @@ const texts = [
 export default function Journey() {
   return (
     <section className="px-4">
-      <div className="max-w-5xl flex flex-col md:flex-row gap-y-8  mb-20 pt-10 items-center justify-center">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-y-8  mb-20 pt-10 items-center justify-center">
         <Image
           src={doctorsImage}
           alt={''}

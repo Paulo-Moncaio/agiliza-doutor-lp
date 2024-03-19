@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function HowItWorks() {
   return (
     <section className="px-4">
-      <div className="max-w-5xl flex flex-col md:flex-row gap-8 mb-10 pt-10 items-center justify-center">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-8 mb-10 pt-10 items-center justify-center">
         <div className="flex items-start">
           <Image className="mt-1" src={lampadaIcon} alt={''} />
           <div className="ml-4">

@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function About() {
   return (
-    <section className="flex pt-16 pb-8 px-2 justify-center items-center flex-col lg:flex-row bg-[#F1F3F6]">
+    <section className="flex mt-20 pt-16 pb-8 px-2 justify-center items-center flex-col lg:flex-row bg-[#F1F3F6]">
       <div className="flex flex-col">
         <h4 className="text-3xl min-w-72">
           Mostramos todas <br />
