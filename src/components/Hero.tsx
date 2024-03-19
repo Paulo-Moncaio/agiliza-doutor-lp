@@ -3,7 +3,6 @@ import Link from 'next/link'
 import bgLogo from '../../public/agilizaIcon.svg'
 import arrowRightIcon from '../../public/arrow-right-circled.svg'
 import doctorImage from '../../public/doctor-sitting-on-the-floor-with-books.png'
-import laptopImage from '../../public/laptop-white-screen.png'
 
 export default function Hero() {
   return (
@@ -44,11 +43,6 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-        <Image
-          src={laptopImage}
-          className="hidden xl:block object-contain right-0 bottom-0"
-          alt={''}
-        />
       </div>
     </section>
   )
