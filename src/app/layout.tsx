@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 import { Roboto } from 'next/font/google'
 import './globals.css'
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={(roboto.className, 'w-full  mx-auto')}>{children}</body>
+      <body className={(roboto.className, 'w-full  mx-auto')}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
