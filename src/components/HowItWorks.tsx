@@ -23,7 +23,7 @@ export default function HowItWorks() {
           className="mt-16 pr-5 max-w-[236px] flex items-center justify-center py-4 text-sm font-normal bg-agiliza-azul-naval text-white transition-all duration-300 ease-in-out hover:scale-105"
           target="_blank"
           href={
-            'https://api.whatsapp.com/send?phone=556198688980&text=Quero%20solicitar%20uma%20demo%20da%20plataforma%20Agiliza%C2%A0Doutor%21'
+            'https://api.whatsapp.com/send?phone=556196051101&text=Quero%20solicitar%20uma%20demo%20da%20plataforma%20Agiliza%C2%A0Doutor%21'
           }
         >
           <p className="px-5">solicite uma demo</p>

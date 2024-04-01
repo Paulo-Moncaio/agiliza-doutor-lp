@@ -36,7 +36,7 @@ export default function Hero() {
             </p>
             <Link
               target="_blank"
-              href="https://api.whatsapp.com/send?phone=556198688980&text=Quero%20conhecer%20mais%20sobre%20a%20plataforma%20Agiliza%C2%A0Doutor!"
+              href="https://api.whatsapp.com/send?phone=556196051101&text=Quero%20conhecer%20mais%20sobre%20a%20plataforma%20Agiliza%C2%A0Doutor!"
               className="flex max-w-max mx-auto mt-16 rounded-full space-x-4 bg-agiliza-green py-4 pl-10 pr-6 hover:bg-agiliza-green/80 transition-all duration-300 ease-in-out cursor-pointer hover:scale-105"
             >
               <p>Entenda como funciona</p>
