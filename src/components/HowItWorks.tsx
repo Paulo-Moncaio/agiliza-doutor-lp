@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function HowItWorks() {
   return (
-    <section className="px-4">
+    <section id="comofunciona" className="px-4">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-8 mb-10 pt-10 items-center justify-center">
         <div className="flex items-start">
           <Image className="mt-1" src={lampadaIcon} alt={''} />
@@ -20,8 +20,11 @@ export default function HowItWorks() {
           </div>
         </div>
         <Link
-          className="mt-16 pr-5 max-w-[236px] flex items-center justify-center py-4 text-sm font-normal bg-agiliza-azul-naval text-white"
-          href={'#'}
+          className="mt-16 pr-5 max-w-[236px] flex items-center justify-center py-4 text-sm font-normal bg-agiliza-azul-naval text-white transition-all duration-300 ease-in-out hover:scale-105"
+          target="_blank"
+          href={
+            'https://api.whatsapp.com/send?phone=556198688980&text=Quero%20solicitar%20uma%20demo%20da%20plataforma%20Agiliza%C2%A0Doutor%21'
+          }
         >
           <p className="px-5">solicite uma demo</p>
           <Image src={rightArrow} alt={''} />

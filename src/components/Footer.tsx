@@ -14,17 +14,27 @@ export default function Footer() {
         <div className="flex flex-col">
           <p>agiliza doutor</p>
           <div className="text-gray-500 font-normal mt-2 flex flex-col">
-            <Link href={'#'}>Quem somos</Link>
-            <Link href={'#'}>Como funciona</Link>
-            <Link href={'#'}>Soluções</Link>
-            <Link href={'#'}>Blog</Link>
-            <Link href={'#'}>Solicitar demo</Link>
+            {/* <Link href={'#'}>Quem somos</Link> */}
+            <Link href={'#comofunciona'}>Como funciona</Link>
+            <Link href={'#solucoes'}>Soluções</Link>
+            {/* <Link href={'#'}>Blog</Link> */}
+            <Link
+              target="_blank"
+              href={
+                'https://api.whatsapp.com/send?phone=556198688980&text=Quero%20solicitar%20uma%20demo%20da%20plataforma%20Agiliza%C2%A0Doutor%21'
+              }
+            >
+              Solicitar demo
+            </Link>
           </div>
         </div>
         <div className="space-y-8">
           <Link
-            href={'#'}
-            className="flex bg-agiliza-green py-4 text-center justify-center"
+            target="_blank"
+            href={
+              'https://api.whatsapp.com/send?phone=556198688980&text=Quero%20solicitar%20uma%20proposta%20da%20plataforma%20Agiliza%C2%A0Doutor%21'
+            }
+            className="flex bg-agiliza-green py-4 text-center justify-center hover:bg-agiliza-green/80 transition-all duration-300 ease-in-out hover:scale-105"
           >
             <Image src={briefcaseIcon} alt={''} />
             <p className="pl-4">solicite sua proposta</p>

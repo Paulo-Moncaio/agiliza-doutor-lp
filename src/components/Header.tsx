@@ -1,12 +1,15 @@
 import Image from 'next/image'
 import Link, { LinkProps } from 'next/link'
-import { PropsWithChildren } from 'react'
+import { AnchorHTMLAttributes, PropsWithChildren } from 'react'
 
-function NavLink({ children, href }: PropsWithChildren & LinkProps) {
+function NavLink({
+  children,
+  ...rest
+}: PropsWithChildren & LinkProps & AnchorHTMLAttributes<HTMLAnchorElement>) {
   return (
     <Link
       className="text-sm text-agiliza-azul-naval hover:text-agiliza-azul-naval/50 duration-300 transition-all"
-      href={href}
+      {...rest}
     >
       {children}
     </Link>
@@ -27,12 +30,19 @@ export default function Header() {
               className="border-none"
             />
           </Link>
-          <nav className="hidden md:flex items-center justify-between gap-4 text-sm">
-            <NavLink href={'#Sobre nós'}>Sobre nós</NavLink>
-            <NavLink href={'#como funciona'}>como funciona</NavLink>
-            <NavLink href={'#soluções'}>soluções</NavLink>
-            <NavLink href={'#blog'}>blog</NavLink>
-            <NavLink href={'#solicitar uma demo'}>solicitar uma demo</NavLink>
+          <a href=""></a>
+          <nav className="hidden md:flex items-center justify-between gap-10 text-sm">
+            {/* <NavLink href={'#Sobre nós'}>Sobre nós</NavLink> */}
+            <NavLink href={'#comofunciona'}>como funciona</NavLink>
+            <NavLink href={'#solucoes'}>soluções</NavLink>
+            <NavLink
+              target="_blank"
+              href={
+                'https://api.whatsapp.com/send?phone=556198688980&text=Quero%20solicitar%20uma%20demo%20da%20plataforma%20Agiliza%C2%A0Doutor%21'
+              }
+            >
+              solicitar uma demo
+            </NavLink>
           </nav>
           <div className="flex items-center gap-2 sm:gap-4">
             <Link

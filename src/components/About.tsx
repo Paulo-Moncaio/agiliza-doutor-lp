@@ -19,8 +19,11 @@ export default function About() {
           seus prazos.
         </h4>
         <Link
-          className="mt-16 max-w-[236px] flex items-center justify-center py-4 text-sm font-normal bg-agiliza-azul-naval text-white"
-          href={'#'}
+          className="mt-16 max-w-[236px] flex items-center justify-center py-4 text-sm font-normal bg-agiliza-azul-naval text-white transition-all duration-300 ease-in-out hover:scale-105"
+          target="_blank"
+          href={
+            'https://api.whatsapp.com/send?phone=556198688980&text=Quero%20solicitar%20uma%20demo%20da%20plataforma%20Agiliza%C2%A0Doutor%21'
+          }
         >
           <p className="px-5">solicite uma demo</p>
           <Image src={rightArrow} alt={''} />
@@ -40,73 +43,20 @@ export default function About() {
           todas as etapas
         </h4>
         <div className="flex flex-col ml-3 gap-y-4 mt-8 md:mt-16">
-          <Link href={'#'} className="flex gap-x-4">
+          <div className="flex gap-x-4">
             <Image src={cadastroIcon} alt={''} />
             <p>cadastro</p>
-          </Link>
-          <Link href={'#'} className="flex gap-x-4">
+          </div>
+          <div className="flex gap-x-4">
             <Image src={loginIcon} alt={''} />
             <p>login</p>
-          </Link>
-          <Link href={'#'} className="flex gap-x-4">
+          </div>
+          <div className="flex gap-x-4">
             <Image src={processosIcon} alt={''} />
             <p>processos</p>
-          </Link>
+          </div>
         </div>
       </div>
     </section>
-  )
-}
-
-export function OldAbout() {
-  return (
-    <div className="about">
-      <div className="text">
-        <p className="text-about">Seu negócio mais ágil e lucrativo.</p>
-        <h4 className="title-about">
-          Mostramos todas
-          <br />
-          as fases do processo,
-          <br />
-          <span className="highlight-green">identificando atrasos</span>
-          <br />
-          que possam impactar
-          <br />
-          seus prazos.
-        </h4>
-        <div className="btn-about">
-          {/* solicite uma demo <FaArrowRightLong className="icon-btn" /> */}
-        </div>
-      </div>
-
-      <div className="center-div">
-        {/* <img className="img-about" src={DollImage2} alt="Doll Image2" /> */}
-      </div>
-
-      <div className="text">
-        <h4 className="title-about">
-          Conte com o<br />
-          <span className="highlight-green">Agiliza Doutor</span> em
-          <br />
-          todas as etapas
-          <br />
-        </h4>
-        <div className="botoes">
-          <span className="span-btn">
-            {' '}
-            {/* <CadastroIcon className="icon" /> cadastro */}
-          </span>
-          <span className="span-btn">
-            {' '}
-            {/* <LoginIcon className="icon" /> login */}
-          </span>
-          <span className="span-btn">
-            {' '}
-            {/* <ProcessoIcon className="icon" /> */}
-            processos
-          </span>
-        </div>
-      </div>
-    </div>
   )
 }
