@@ -18,7 +18,7 @@ export default function Header() {
     <header className="bg-white">
       <div className="px-4 py-8 md:px-6 lg:px-8 ">
         <div className="flex items-center justify-between h-14 mx-auto max-w-5xl">
-          <Link className="font-semibold flex items-center gap-2" href="#">
+          <Link className="font-semibold flex items-center gap-2" href="/">
             <Image
               src={'/agiliza-logo.svg'}
               width={136}
@@ -37,13 +37,13 @@ export default function Header() {
           <div className="flex items-center gap-2 sm:gap-4">
             <Link
               className="rounded-full border-[2px] px-8 hover:scale-110 hover:bg-agiliza-green transition-all duration-300  border-agiliza-green flex items-center gap-2 py-2 text-sm"
-              href="#"
+              href="https://agilizadoutor.com.br/login"
             >
               <span>login</span>
             </Link>
             <Link
               className="bg-agiliza-azul-naval text-white hover:scale-110 hover:text-agiliza-azul-naval hover:bg-transparent border-[2px] transition-all duration-300 border-agiliza-azul-naval px-2 md:px-8 rounded-full flex items-center gap-2 py-2 text-sm font-medium"
-              href="#"
+              href="https://agilizadoutor.com.br/cadastro"
             >
               <span>registre-se</span>
             </Link>
