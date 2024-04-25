@@ -31,9 +31,7 @@ export default function Footer() {
         <div className="space-y-8">
           <Link
             target="_blank"
-            href={
-              'https://api.whatsapp.com/send?phone=556196051101&text=Quero%20solicitar%20uma%20proposta%20da%20plataforma%20Agiliza%C2%A0Doutor%21'
-            }
+            href={'https://forms.kommo.com/rtlcwvl'}
             className="flex bg-agiliza-green py-4 text-center justify-center hover:bg-agiliza-green/80 transition-all duration-300 ease-in-out hover:scale-105"
           >
             <Image src={briefcaseIcon} alt={''} />
